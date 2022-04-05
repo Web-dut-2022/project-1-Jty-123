@@ -1,0 +1,14 @@
+{% block body %}
+    <h1>Relate Pages</h1>
+
+    <ul>
+        {% for entry in entries %}
+        <a href="wiki/{{entry}}">
+            <li>{{ entry }}</li>
+        </a>
+        {% empty %}
+        <h1>No Relate Pages</h1>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
